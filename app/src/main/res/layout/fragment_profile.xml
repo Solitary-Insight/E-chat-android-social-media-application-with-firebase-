@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserRepository.Activities.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="15dp">
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="0dp"
+                    android:padding="15dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/user_image"
+                        android:src="@drawable/user"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/amit_kumar"
+                            android:textAlignment="center"
+                            android:id="@+id/username_head"
+                            android:textSize="20sp"
+                            android:layout_marginEnd="10px"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="1dp"
+                            android:id="@+id/edit_lottie"
+                            android:layout_marginStart="3dp"
+                            app:lottie_rawRes="@raw/edit"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/about"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:textColor="@color/black"
+                            android:text="@string/bio"
+                            android:id="@+id/bio"
+                            android:fontFamily="@font/poppinsregular"
+                            android:textSize="15sp"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/user_information"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/username_"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#6E6C6C"
+                            android:text="Abdulhaseeb"
+                            android:id="@+id/username"
+
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentEnd="true"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginTop="15dp"-->
+                    <!--                android:layout_marginStart="10dp"-->
+                    <!--                android:layout_marginEnd="10dp">-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:text="@string/gender"-->
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textSize="15sp"-->
+                    <!--                    android:layout_alignParentStart="true"-->
+                    <!--                    android:textStyle="bold"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textColor="#6E6C6C"-->
+                    <!--                    android:text="@string/male"-->
+                    <!--                    android:id="@+id/gender"-->
+
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textSize="15sp"-->
+                    <!--                    android:layout_alignParentEnd="true"-->
+                    <!--                    android:textStyle="bold"/>-->
+                    <!--            </RelativeLayout>-->
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginTop="15dp"-->
+                    <!--                android:layout_marginStart="10dp"-->
+                    <!--                android:layout_marginEnd="10dp">-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:text="@string/age"-->
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textSize="15sp"-->
+                    <!--                    android:layout_alignParentStart="true"-->
+                    <!--                    android:textStyle="bold"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textColor="#6E6C6C"-->
+                    <!--                    android:text="@string/_21"-->
+                    <!--                    android:id="@+id/age"-->
+
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textSize="15sp"-->
+                    <!--                    android:layout_alignParentEnd="true"-->
+                    <!--                    android:textStyle="bold"/>-->
+                    <!--            </RelativeLayout>-->
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginTop="15dp"-->
+                    <!--                android:layout_marginStart="10dp"-->
+                    <!--                android:layout_marginEnd="10dp">-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:text="@string/date_of_birth"-->
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textSize="15sp"-->
+                    <!--                    android:layout_alignParentStart="true"-->
+                    <!--                    android:textStyle="bold"/>-->
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textColor="#6E6C6C"-->
+                    <!--                    android:text="@string/_07_02_2003"-->
+                    <!--                    android:id="@+id/dob"-->
+
+                    <!--                    android:fontFamily="@font/poppinsmedium"-->
+                    <!--                    android:textSize="15sp"-->
+                    <!--                    android:layout_alignParentEnd="true"-->
+                    <!--                    android:textStyle="bold"/>-->
+                    <!--            </RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/mobile"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#6E6C6C"
+                            android:id="@+id/mobile"
+                            android:text="@string/_91_9000000009"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentEnd="true"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/email"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#6E6C6C"
+                            android:textAlignment="textEnd"
+                            android:text="abdc@gmail.com"
+                            android:id="@+id/email"
+
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="15sp"
+                            android:layout_alignParentEnd="true"
+                            android:textStyle="bold"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="10dp">
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="15dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginEnd="10dp">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:text="@string/social_media"-->
+<!--                            android:fontFamily="@font/poppinsmedium"-->
+<!--                            android:textSize="15sp"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:textStyle="bold"/>-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:useDefaultMargins="true"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:gravity="center"-->
+<!--                        >-->
+
+<!--                        <com.airbnb.lottie.LottieAnimationView-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            app:lottie_loop="true"-->
+
+<!--                            app:lottie_autoPlay="true"-->
+<!--                            app:lottie_rawRes="@raw/twitter"/>-->
+
+<!--                        <com.airbnb.lottie.LottieAnimationView-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            app:lottie_loop="true"-->
+<!--                            app:lottie_autoPlay="true"-->
+<!--                            app:lottie_rawRes="@raw/linkedin"/>-->
+
+<!--                        <com.airbnb.lottie.LottieAnimationView-->
+<!--                            android:layout_width="50dp"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            app:lottie_loop="true"-->
+<!--                            app:lottie_autoPlay="true"-->
+<!--                            app:lottie_rawRes="@raw/facebook"/>-->
+
+<!--                    </androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--                </LinearLayout>-->
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="10px"
+                android:id="@+id/logout_card"
+                android:layout_margin="5px"
+                app:cardCornerRadius="10px"
+                app:cardElevation="10px"
+                >
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10px"
+                    android:orientation="horizontal"
+
+                    android:gravity="end">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#FF001E"
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:padding="5px"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_logout_24">
+
+                    </ImageView>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

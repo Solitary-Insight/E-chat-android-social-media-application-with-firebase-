@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvVerificationMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please verify your email address. Check your inbox for a verification link."
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCheckVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Verification Status"
+            android:layout_marginTop="8dp"
+            />
+
+        <Button
+            android:id="@+id/try_other_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try another account"
+            android:layout_marginTop="8dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnResendEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Resend Verification Email"
+
+            />
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

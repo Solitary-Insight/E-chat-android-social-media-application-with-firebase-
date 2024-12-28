@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="5dp"
+    tools:context=".social_Repo.Activites.FeedFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:padding="5dp"
+
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <SearchView
+        android:id="@+id/searchView_posts"
+        android:layout_gravity="start"
+        android:background="@drawable/rounded_bordered_background_grey"
+        android:layout_margin="10px"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:queryHint="Search about something"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="true" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feed_recycler_view"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_margin="10px"
+        android:textSize="16sp"
+
+        android:text="fefefef"
+        android:textColor="@color/grey"
+        android:id="@+id/no_feed_tv"
+        android:visibility="gone"
+        >
+
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_margin="10px"
+        android:textSize="12sp"
+        android:textAlignment="center"
+
+        android:text="loading posts..."
+        android:textColor="@color/grey"
+        android:id="@+id/loading_feed_tv"
+        android:visibility="gone"
+        >
+
+
+    </TextView>
+</androidx.appcompat.widget.LinearLayoutCompat>

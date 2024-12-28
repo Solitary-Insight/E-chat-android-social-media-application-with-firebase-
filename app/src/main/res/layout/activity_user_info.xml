@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRepository.Activities.User_info_activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_light"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--<com.google.compo-->
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/iv_profile_picture"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_profile_placeholder"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:background="@color/border_color"
+                android:padding="8dp"
+                android:clipToOutline="true" />
+
+            <!-- Upload Button -->
+            <Button
+                android:id="@+id/btn_upload_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Upload Picture"
+                android:backgroundTint="@color/button_secondary"
+                android:textColor="@color/white"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/border_color"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/border_color"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:inputType="textEmailAddress" />
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone (Optional)"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/border_color"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:inputType="phone" />
+
+            <!-- Bio -->
+            <EditText
+                android:id="@+id/et_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bio"
+                android:textColor="@color/text_primary"
+                android:backgroundTint="@color/border_color"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btn_save_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Profile"
+                android:backgroundTint="@color/info"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <!-- Footer -->
+            <TextView
+                android:id="@+id/tv_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your profile data is securely saved."
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

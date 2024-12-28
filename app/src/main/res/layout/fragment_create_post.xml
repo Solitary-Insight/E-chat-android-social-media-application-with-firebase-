@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10px"
+    tools:context=".social_Repo.Activites.CreatePostFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5px"
+            android:orientation="vertical"
+            android:gravity="center"
+
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Post"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black">
+
+
+            </TextView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                app:cardElevation="3px"
+                app:cardCornerRadius="10px"
+                android:paddingTop="20px"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="What is in your mind?">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/post_input_et"
+                        android:maxLines="10"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Media"
+                        android:textStyle="bold"
+                        android:layout_margin="5px"
+
+                        android:textSize="16sp"
+                        android:textColor="@color/black">
+
+                    </TextView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/media_recycler_view"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:layout_margin="5px"
+
+                        android:padding="5px">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+<!--<FrameLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--    <VideoView-->
+<!--        android:id="@+id/media_video"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@color/button_primary"-->
+<!--        android:layout_margin="5px"-->
+
+<!--        android:maxWidth="540px"-->
+<!--        android:maxHeight="360px"-->
+
+<!--        android:layout_height="wrap_content"-->
+<!--        android:focusable="true"-->
+<!--        android:focusableInTouchMode="true" />-->
+<!--    <ImageView-->
+<!--        android:id="@+id/media_image"-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:maxWidth="540px"-->
+<!--        android:maxHeight="360px"-->
+<!--        android:padding="5px"-->
+
+<!--        android:layout_height="360px"-->
+
+<!--        />-->
+<!--</FrameLayout>-->
+
+                    <TextView
+                        android:id="@+id/item_counts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:padding="10dp"
+
+                        android:textColor="@color/button_primary">
+
+                    </TextView>
+
+<!--                    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="5px">-->
+
+<!--                        <com.google.android.material.button.MaterialButton-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="start"-->
+<!--                            android:id="@+id/previous"-->
+<!--                            android:text="previous"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:backgroundTint="@color/button_secondary"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            >-->
+
+<!--                        </com.google.android.material.button.MaterialButton>-->
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="wrap_content">-->
+
+<!--                        </LinearLayout>-->
+<!--                        <com.google.android.material.button.MaterialButton-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="end"-->
+<!--                            android:id="@+id/next"-->
+<!--                            android:text="Next"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:backgroundTint="@color/button_secondary"-->
+<!--                            android:textSize="16sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            >-->
+
+<!--                        </com.google.android.material.button.MaterialButton>-->
+
+<!--                    </androidx.appcompat.widget.LinearLayoutCompat>-->
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_margin="10px"
+                        android:id="@+id/upload_media_btn"
+                        android:text="Add Media"
+                        app:icon="@drawable/baseline_add_a_photo_24"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/button_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        >
+
+                    </com.google.android.material.button.MaterialButton>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/post_button"
+                        android:text="Post"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/button_secondary"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        >
+
+                    </com.google.android.material.button.MaterialButton>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

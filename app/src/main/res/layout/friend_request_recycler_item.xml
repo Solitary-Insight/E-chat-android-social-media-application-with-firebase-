@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:padding="20px"
+        app:cardElevation="5px"
+        app:cardCornerRadius="10px">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_friend_req_Circular_Image"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="50dp"
+
+                    android:layout_margin="10px"
+                    android:src="@drawable/baseline_person_24"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abdul "
+                    android:textColor="@color/black"
+                    android:id="@+id/friend_req_username"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+            <Button
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Accept"
+
+                android:textSize="16sp"
+
+                app:icon="@drawable/baseline_done_24"
+                android:layout_margin="5px"
+                android:id="@+id/friend_req_accept_button"
+                android:textStyle="bold"
+
+                />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

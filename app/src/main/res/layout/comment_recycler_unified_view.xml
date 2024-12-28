@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="540px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+<!--    others comments-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        android:id="@+id/comment_card"
+        app:cardElevation="5px"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+<!--                <ImageView-->
+<!--                    android:layout_width="100px"-->
+<!--                    android:src="@drawable/baseline_person_24"-->
+<!--                    android:layout_margin="5px"-->
+<!--                    android:layout_marginEnd="7px"-->
+<!--                    android:background="@drawable/rounded_bordered_background_grey"-->
+<!--                    android:layout_height="100px">-->
+
+<!--                </ImageView>-->
+
+
+
+                <TextView
+                    android:id="@+id/comment_username_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:text="Abdul Haseeb"
+
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_weight="1">
+
+                </View>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20px"
+                    android:id="@+id/delete_card"
+                    android:layout_margin="5px"
+                    app:cardElevation="5px"
+                    android:visibility="gone"
+                    >
+                    <ImageView
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_margin="20px"
+
+                        android:id="@+id/delete_comment"
+
+
+                        android:src="@drawable/baseline_delete_forever_24"
+                        android:layout_gravity="center_vertical"
+
+
+
+                        >
+
+                    </ImageView>
+                </com.google.android.material.card.MaterialCardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15px"
+                android:text="this is a comment"
+                android:minEms="16"
+                android:textSize="12sp"
+                android:id="@+id/comment_text"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24-5-2024 2:30 pm"
+                android:textAlignment="textEnd"
+                android:textStyle="italic"
+                android:id="@+id/comment_date"
+                android:layout_marginEnd="10px"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+
+                android:textColor="@color/black">
+
+            </TextView>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</FrameLayout>
